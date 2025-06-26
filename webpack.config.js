@@ -1,4 +1,6 @@
 const path = require("path");
+// const XwjPlugin = require("./plugin/XwjPlugin.js");
+const BannerPlugin = require("./plugin/BannerPlugin.js");
 module.exports = {
     entry: "./src/index.js",
     output: {
@@ -20,4 +22,7 @@ module.exports = {
             },
         ]
     },
+    plugins: [
+        new BannerPlugin()
+    ],
 }
